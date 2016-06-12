@@ -3,24 +3,162 @@
   <head>
     <meta charset="UTF-8">
     <title>Rebecca's Page!</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+    <script src="https://use.fonticons.com/8c559dfc.js"></script>
     <style>
 
     body {
-
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-
+      text-align: center;
+      background-color: #CCC;
+      font-family: "Oswald", sans-serif;
     }
 
-    </style>
+    #left {
+      overflow: hidden;
+      position: fixed;
+      float: left;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 40%;
+      height: 100%;
+    }
+
+    #right {
+      float: right;
+      text-align: left;
+      width: 60%;
+    }
+
+    #right > div {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #photo {
+      background: url(DSCN0904.jpg) no-repeat center;
+      background-size: 75%;
+      height: 50%;
+    }
+
+    .fixed-nav-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 50px;
+      background-color: #213A40;
+    }
+
+    .menu a, .menu a:visited {
+      color: #ffffff;
+    }
+    .menu a:hover, .menu a:target {
+      color: #ebebeb;
+    }
+
+    .menu-items {
+      display: inline-block;
+      width: 60%;
+      float: right;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .menu-items li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    .menu-items a {
+      text-decoration: none;
+    }
+
+    .fa-angle-double-up,
+    .fa-angellist {
+      color: black;
+    }
+
+    .fa-linkedin-square {
+      color: #0077B5;
+    }
+
+    .fa-github {
+      color: #4183c4;
+    }
+
+    .going-up {
+      width: 50px;
+      height: 50px;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+    }
+
+
+  </style>
   </head>
   <body>
-    <div>
-      <h2>Rebecca Lin</h2>
+
+    <nav class="fixed-nav-bar">
+      <div id="menu" class="menu">
+        <ul class="menu-items">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#hobbit">Hobbit</a></li>
+          <!-- <li><a href="">Twitter</a></li>
+          <li><a href="">Facebook</a></li> -->
+        </ul>
+      </div>
+    </nav>
+
+    <div id="left">
+      <div id="photo"></div>
+      <div>
+        <h1>Rebecca Lin</h1>
+        <p>rebeccatintin11@gmail.com</p>
+        <a href="https://www.linkedin.com/in/rebeccatintin11"><i class="fa fa-linkedin-square fa-2x"></i></a>
+        <a href="https://github.com/rebeccatintin11"><i class="fa fa-github fa-2x"></i></a>
+        <a href="https://angel.co/rebecca-lin-1"><i class="fa fa-angellist fa-2x"></i></a>
+      </div>
     </div>
-    <div>
-      <h2>About Me</h2>
+    <div id="right">
+      <div class="going-up">
+        <a href="#"><i class="fa fa-angle-double-up fa-2x going-up"></i></a>
+      </div>
+      <div id="about">
+        <h2>About Me</h2>
+        <div>
+          <p>Full Stack developer</p>
+          <p>Graduated from University of Southern California at May 2015</p>
+          <p>M.S. of Computer Science</p>
+          <p>Programing Language</p>
+        </div>
+      </div>
+      <div id="projects">
+        <h2>About Me 2</h2>
+        <div>
+          <p>Full Stack developer</p>
+          <p>Graduated from University of Southern California at May 2015</p>
+          <p>M.S. of Computer Science</p>
+          <p></p>
+        </div>
+      </div>
+      <div id="hobbit">
+        <h2>About Me 3</h2>
+        <div>
+          <p>Full Stack developer</p>
+          <p>Graduated from University of Southern California at May 2015</p>
+          <p>M.S. of Computer Science</p>
+          <p>Programing Language</p>
+        </div>
+      </div>
     </div>
+
+    <script src="scroll.js" charset="utf-8"></script>
   </body>
 </html>
