@@ -15,7 +15,7 @@ $(document).ready(function(){
 
   $("#nav-hobbies").click(function() {
     $('html, body').animate({
-        scrollTop: $("#hobbit").offset().top
+        scrollTop: $("#hobbies").offset().top
     }, 1000);
      return false;
   });
