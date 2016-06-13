@@ -13,7 +13,7 @@ $(document).ready(function(){
     return false;
   });
 
-  $("#nav-hobbit").click(function() {
+  $("#nav-hobbies").click(function() {
     $('html, body').animate({
         scrollTop: $("#hobbit").offset().top
     }, 1000);
