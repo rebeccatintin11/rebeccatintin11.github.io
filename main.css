@@ -54,7 +54,6 @@ body {
 }
 
 .menu-items {
-  display: inline-block;
   width: 60%;
   float: right;
   display: flex;
@@ -143,11 +142,22 @@ body {
     width: 80%;
   }
 
-  .menu-items {
-    display: inline-block;
-    width: 100%;
+  .menu {
     display: flex;
     justify-content: center;
+  }
+
+  .menu-items {
+    width: 30%;
+    float: none;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    padding-left: 0px;
+  }
+
+  .menu-items li {
+    margin-right: 0;
   }
 
 }

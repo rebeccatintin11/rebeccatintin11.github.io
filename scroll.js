@@ -20,19 +20,10 @@ $(document).ready(function(){
      return false;
   });
 
-  if($(window).width() >= 720) {
-    $("#going-up").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#about").offset().top
-      }, 1000);
-       return false;
-    });
-  } else {
-    $("#going-up").click(function() {
-      $('html, body').animate({
-          scrollTop: 0
-      }, 1000);
-       return false;
-    });
-  }
+  $("#going-up").click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1000);
+     return false;
+  });
 });
