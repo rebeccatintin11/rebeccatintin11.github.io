@@ -20,7 +20,7 @@ $(document).ready(function(){
      return false;
   });
 
-  if($(window).width() >= 700) {
+  if($(window).width() >= 720) {
     $("#going-up").click(function() {
       $('html, body').animate({
           scrollTop: $("#about").offset().top
