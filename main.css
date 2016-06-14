@@ -98,3 +98,56 @@ body {
   right: 0;
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #left {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #photo {
+    background: url(image/DSCN0904.JPG) no-repeat center;
+    background-size: 75%;
+    height: 50vw;
+    width: 75vh;
+  }
+
+  #right {
+    text-align: left;
+    width: 100%;
+  }
+
+  #right > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #right > div > h2{
+    text-align: center;
+  }
+
+  #right > div > div{
+    width: 80%;
+  }
+
+  .menu-items {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+}
