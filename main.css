@@ -161,3 +161,10 @@ body {
   }
 
 }
+
+@media screen and (max-width: 360px) {
+
+  .menu-items {
+    width: 100%;
+  }
+}
